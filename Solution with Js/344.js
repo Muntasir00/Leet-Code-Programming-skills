@@ -9,6 +9,8 @@ var reverseString = function(s){
         last-- ;
 
     }
+    return s;
 
 }
-console.log(reverseString(["H","a","n","n","a","h"]))
+var y = reverseString(["h","e","l","l","o"])
+console.log(y)
