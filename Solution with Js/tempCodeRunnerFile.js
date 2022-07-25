@@ -1,1 +1,3 @@
-revNum
+function containDuplicate(nums){
+
+// }
