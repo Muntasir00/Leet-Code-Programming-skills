@@ -1,14 +1,17 @@
-import random
-charsCU = list('ACDEFGHIJKLMNOPQRSTWXYZ')
-charscs = list('abcdefghijklmnopqrstwxyz')
-name = ""
-for x in range(1):
-    name += random.choice(charsCU)
-for x in range(10):
-    name += random.choice(charscs)
-name += " "
-for x in range(1):
-    name += random.choice(charsCU)
-for x in range(6):
-    name += random.choice(charscs)
-print(name)
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if(x==0):
+            return True
+        if(x<0):
+            return False
+        num,pr = x,0
+        while(x>0):
+            temp = x%10
+            pr = pr*10+temp
+            x = x//10
+        if(num==pr):
+            return True
+        return False
+
+s = Solution()
+print(s.isPalindrome(121))
